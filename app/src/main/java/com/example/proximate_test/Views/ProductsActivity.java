@@ -41,10 +41,10 @@ public class ProductsActivity extends AppCompatActivity implements NavigationVie
         FragmentManager fragmentManager = getSupportFragmentManager();
         if(id == R.id.navigation_home){
             fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, new PrincipalFragment()).commit();
-            Toast.makeText(ProductsActivity.this,"home",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ProductsActivity.this,"Home",Toast.LENGTH_SHORT).show();
         }else if (id == R.id.sension_end){
             CloseSesion();
-            Toast.makeText(ProductsActivity.this,"cerrar sesion",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ProductsActivity.this,"Cerrar sesión",Toast.LENGTH_SHORT).show();
         }
         return true;
     }
